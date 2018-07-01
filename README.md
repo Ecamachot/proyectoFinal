@@ -1,4 +1,5 @@
-# <CENTER>APLICACION WEB <br>"DIRECTORIO TELEFONICO POLICIAL"</CENTER>
+# APLICACION WEB 
+## "DIRECTORIO TELEFONICO POLICIAL"
 
 Se requiere contar con un sistema web que permita buscar una Unidad Policial o Comisaria y que muestre los datos basicos de la misma como Direccion, Correo, Telefonos, Direccion, Jefe, etc.  
 
