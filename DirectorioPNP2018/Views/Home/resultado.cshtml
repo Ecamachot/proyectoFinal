@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DirectorioPNP2018.Models.UnidadPNPs>
+@{
+    ViewBag.Title = "resultado";
+    Layout = "~/Views/Shared/_layoutDirectorio.cshtml";
+}
+<div class="container body-content">
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>
+                <br>
+            </p>
+            @foreach (var u in Model)
+            {
+
+                <table class="table table-bordered">
+
+                    <tr>
+                        <td colspan="2" class="success"><strong>@u.nombreOficial</strong></td>
+                    </tr>
+            @foreach (var t in u.Telefonos)
+            {
+                <tr>
+                    <td><span class="glyphicon glyphicon-earphone icon"></span><a href="tel:@t.numero" class="sin">@t.numero</a></td>
+                </tr>
+
+            }
+                    <tr> 
+                        <td id="cortarPalabra">@u.correo</td>
+                    </tr>
+
+                    <tr>
+                        <td>@u.calle</td>
+                    </tr>
+
+                    <tr>
+                        <td>@u.Jefes.nombres @u.Jefes.apPaterno @u.Jefes.apMaterno</td>
+                    </tr>
+                </table>
+            }
+            
+             <br>
+
+        </div>
+        </div>
+
